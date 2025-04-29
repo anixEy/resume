@@ -1,6 +1,15 @@
+/**
+ * Main home page component that assembles the portfolio.
+ * Implements a staggered animation system for the main sections
+ * using Framer Motion for smooth transitions and animations.
+ * 
+ * @component
+ * @returns {JSX.Element} The complete portfolio page with animated sections
+ */
 'use client';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
+import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Education from '../components/Education';
@@ -30,6 +39,9 @@ export default function Home() {
         animate="show"
         className="container mx-auto px-4 py-8 space-y-16"
       >
+        <motion.div variants={item}>
+          <About />
+        </motion.div>
         <motion.div variants={item}>
           <Experience />
         </motion.div>

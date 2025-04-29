@@ -1,4 +1,11 @@
-import { ThemeProvider } from 'next-themes'
+/**
+ * Root layout component that provides basic HTML structure.
+ * 
+ * @component
+ * @param {Object} props - Component properties
+ * @param {React.ReactNode} props.children - Child components to render
+ * @returns {JSX.Element} The root layout wrapper
+ */
 import './globals.css'
 
 export const metadata = {
@@ -8,11 +15,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   )

@@ -1,3 +1,11 @@
+/**
+ * A button component that toggles between light and dark themes.
+ * Uses next-themes for theme management and includes smooth animations.
+ * Displays different icons based on the current theme.
+ * 
+ * @component
+ * @returns {JSX.Element|null} A theme toggle button or null during SSR
+ */
 'use client';
 
 import { useState, useEffect } from 'react'

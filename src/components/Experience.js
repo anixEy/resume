@@ -1,3 +1,11 @@
+/**
+ * Experience component that showcases professional work history.
+ * Displays job positions with company details, responsibilities, and dates.
+ * Features staggered animations for list items and hover effects.
+ * 
+ * @component
+ * @returns {JSX.Element} A section displaying professional experience cards
+ */
 import { motion } from 'framer-motion';
 
 export default function Experience() {

@@ -1,3 +1,11 @@
+/**
+ * Education component that displays educational background and certifications.
+ * Shows university degree details and professional certifications in a grid layout.
+ * Features staggered animations and hover effects using Framer Motion.
+ * 
+ * @component
+ * @returns {JSX.Element} A section displaying education and certification details
+ */
 import { motion } from 'framer-motion';
 
 export default function Education() {
